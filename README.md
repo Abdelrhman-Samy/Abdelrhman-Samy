@@ -17,13 +17,6 @@ Skilled at **data cleaning, EDA, predictive modeling, and dashboard development*
 
 ---
 
-## 🎓 Education  
-**B.Sc. in Computer Science**  
-MET Academy of Engineering and Technology  
-📅 Oct 2021 – Jun 2025 | 🎖️ Grade: Good  
-
----
-
 ## 💻 Projects  
 
 ### 🔹 [Sales Performance Analysis – Retail Business (Power BI)](https://github.com/Abdelrhman-Samy/Sales-Dashboard-PowerBI)  
@@ -75,10 +68,18 @@ MET Academy of Engineering and Technology
 
 ---
 
-## 🌍 Languages  
-- 🇪🇬 Arabic: Native  
-- 🇬🇧 English: Good  
+## 🎓 Education  
+**B.Sc. in Computer Science**  
+MET Academy of Engineering and Technology  
+📅 Oct 2021 – Jun 2025 
 
+---
+
+## 🌍 Languages  
+
+- 🇪🇬 Arabic: Native  
+- 🇬🇧 English: Good
+  
 ---
 
 ✉️ **Let’s connect and collaborate!**  
