@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Abdelrhman Samy Hussein  
 
-🎓 Computer Science Student | 📊 Data Analyst | 🤖 Aspiring AI Engineer  
+🎓 Computer Science graduate | 📊 Data Analyst | 🤖 Aspiring AI Engineer  
 
 📍 Mansoura, Egypt  
 📧 [abdosamysamaha@gmail.com](mailto:abdosamysamaha@gmail.com)  
