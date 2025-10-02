@@ -11,8 +11,8 @@
 ---
 
 ## 🚀 Professional Summary  
-Recent Computer Science graduate with expertise in **data analysis, machine learning, and data visualization**.  
-Proficient in **Python (Pandas, NumPy, Scikit-learn, Matplotlib)**, **SQL**, and BI tools (**Power BI, Tableau**).  
+Computer Science graduate with expertise in **data analysis, machine learning, and data visualization**.  
+Skilled at in **Python (Pandas, NumPy, Scikit-learn, Matplotlib)**, **SQL**, and BI tools (**Power BI, Tableau**).  
 Skilled at **data cleaning, EDA, predictive modeling, and dashboard development** to drive **data-informed decisions**.  
 
 ---
@@ -28,6 +28,12 @@ Skilled at **data cleaning, EDA, predictive modeling, and dashboard development*
 - Designed an **interactive Tableau dashboard** for car data (price, horsepower, fuel efficiency).  
 - Added filters by region (**Asia, Europe, USA**) to enable dynamic insights.  
 - **Tools:** Tableau  
+
+### 🔹 [Sales Data Analysis Project – Excel](https://github.com/Abdelrhman-Samy/Sales-Excel-Full-Project)  
+- Cleaned and transformed **6 datasets** with Power Query (merging, formatting, handling missing values & duplicates).  
+- Built relational **data model** in Power Pivot and created **DAX KPIs** (Total Sales, Active Customers).  
+- Designed an **interactive Excel dashboard** with PivotTables & charts (Bar, Line, Pie, Stacked Column, KPI Cards).  
+- **Tools:** Excel (Power Query, Power Pivot, DAX, PivotTables, Dashboards)  
 
 ### 🔹 [Sales Analysis (India) – Excel](https://github.com/Abdelrhman-Samy/sales-analysis-project)  
 - Built an **Excel dashboard** with Power Query & Pivot Tables.  
@@ -47,7 +53,7 @@ Skilled at **data cleaning, EDA, predictive modeling, and dashboard development*
 ---
 
 ## 🏅 Certifications & Courses  
-- 🎓 **Data Science Scholarship** – DataCamp (Career Track, In Progress)  
+- 🎓 **Data Science Career Track** – DataCamp Scholarship (In Progress)  
 - Data Cleaning in Python – DataCamp  
 - Exploratory Data Analysis in Python – DataCamp  
 - Intermediate SQL – DataCamp  
@@ -78,7 +84,7 @@ MET Academy of Engineering and Technology
 ## 🌍 Languages  
 
 - 🇪🇬 Arabic: Native  
-- 🇬🇧 English: Good
+- 🇬🇧 English: Intermediate
   
 ---
 
