@@ -1,0 +1,273 @@
+/* Base setup */  
+* {  
+  margin: 0;  
+  padding: 0;  
+  box-sizing: border-box;  
+}  
+  
+body {  
+  font-family: 'Poppins', sans-serif;  
+  color: #e0e0e0;  
+  background-color: #0b0c10;  
+  overflow-x: hidden;  
+}  
+  
+/* Header */  
+.header {  
+  width: 100%;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  z-index: 10;  
+  background: rgba(10, 10, 10, 0.6);  
+  backdrop-filter: blur(6px);  
+  padding: 15px 60px;  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+}  
+  
+.logo {  
+  font-size: 1.5rem;  
+  font-weight: 700;  
+  color: #e0e0e0;  
+}  
+  
+.logo span {  
+  color: #5DADE2;  
+}  
+ /* تحريك بسيط لليمين أو الشمال */ 
+ 
+.nav { 
+  position: relative; 
+  left: 200px; /* تحركها يمين أو شمال */ 
+} 
+ 
+ 
+.nav a {  
+  margin-left: 25px;  
+  color: #aaa;  
+  text-decoration: none;  
+  transition: color 0.3s;  
+}  
+  
+.nav a:hover, .nav a.active {  
+  color: #5DADE2;  
+}  
+  
+/* Hero section */  
+.hero {  
+  position: relative;  
+  height: 100vh;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  background: url('background.png') no-repeat center center / cover;
+
+}  
+  
+.overlay {  
+  position: absolute;  
+  inset: 0;  
+  background: rgba(10, 10, 10, 0.65);  
+  backdrop-filter: blur(4px);  
+}  
+  
+.hero-content {  
+  position: relative;  
+  z-index: 2;  
+  text-align: center;  
+  max-width: 700px;  
+  padding: 20px;  
+}  
+  
+.hero-content h2 {  
+  font-size: 1.5rem;  
+  margin-bottom: 15px;  
+   color: #00bcd4;  
+}  
+  
+.hero-content p {  
+  font-size: 1.1rem;  
+  color: #b0b0b0;  
+  margin-bottom: 30px;  
+  line-height: 1.6;  
+}  
+  
+/* Buttons */  
+.btn {  
+  display: inline-block;  
+  padding: 12px 28px;  
+  border-radius: 9999px;  
+  font-weight: 600;  
+  text-decoration: none;  
+  transition: all 0.3s ease;  
+}  
+  
+.btn.primary {  
+  background: #5DADE2;  
+  color: #000;  
+}  
+  
+.btn.primary:hover {  
+  background: #4A90D9;  
+}  
+  
+.btn.outline {  
+  border: 2px solid #5DADE2;  
+  color: #5DADE2;  
+  margin-left: 15px;  
+}  
+  
+.btn.outline:hover {  
+  background: #5DADE2;  
+  color: #000;  
+}  
+  
+/* Footer */  
+.footer {  
+  text-align: center;  
+  padding: 20px;  
+  background: #0b0c10;  
+  color: #777;  
+  font-size: 0.9rem;  
+}  
+  
+.profile-img {  
+  width: 180px;  
+  height: 180px;  
+  border-radius: 50%;  
+  object-fit: cover;  
+  border: 3px solid #5DADE2;  
+  margin-bottom: 25px;  
+  box-shadow: 0 0 15px rgba(93, 173, 226, 0.4);  
+} 
+.about-section { 
+  background-color: #0f0f0f; 
+  color: #fff; 
+  padding: 80px 0; 
+  text-align: center; 
+} 
+ 
+.about-section h2 { 
+  font-size: 2rem; 
+  margin-bottom: 20px; 
+  color: #00bcd4; 
+} 
+ 
+.about-section p { 
+  font-size: 1.1rem; 
+  max-width: 800px; 
+  margin: 0 auto; 
+  line-height: 1.8; 
+  color: #ddd; 
+} 
+.skill-section ul { 
+  list-style: disc; 
+  padding-left: 20px; 
+  color: #b0b0b0;  /* لون النصوص */ 
+} 
+ 
+.skill-section ul li { 
+  margin-bottom: 8px; 
+  position: relative; 
+} 
+ 
+/* تغيير لون النقاط */ 
+.skill-section ul li::marker { 
+  color: #5DADE2;  /* اختر اللون اللي تحبه للنقاط */ 
+} 
+/* Skills page styling */ 
+.skill-section-title { 
+  color: #5DADE2; /* لون العنوان الرئيسي */ 
+  font-size: 2rem; 
+  margin-bottom: 30px; 
+} 
+ 
+.skill-section h3 { 
+  color: #5DADE2; /* لون عناوين الأقسام */ 
+  margin-bottom: 10px; 
+} 
+ 
+.skill-section ul { 
+  list-style: disc; 
+  padding-left: 25px; 
+  color: #e0e0e0; /* لون النصوص العادية */ 
+  margin-bottom: 25px; 
+} 
+ 
+.skill-section ul li::marker { 
+  color: #5DADE2; /* لون النقاط */ 
+} 
+ 
+.skill-section ul li { 
+  margin-bottom: 8px; 
+} 
+/* Projects Grid */ 
+.projects-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 25px; /* مسافة بين المشاريع */ 
+  margin-top: 30px; 
+} 
+ 
+/* Project Card */ 
+.project-card { 
+  background-color: #1c1d22; /* خلفية البطاقة */ 
+  padding: 20px; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 15px rgba(93, 173, 226, 0.2); 
+  transition: transform 0.3s, box-shadow 0.3s; 
+} 
+ 
+.project-card:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(93, 173, 226, 0.4); 
+} 
+ 
+.project-img-placeholder { 
+  background-color: #0b0c10; 
+  color: #5DADE2; 
+  font-weight: bold; 
+  text-align: center; 
+  padding: 40px 0; 
+  border-radius: 8px; 
+  margin-bottom: 15px; 
+} 
+ 
+.project-card p { 
+  color: #ccc; 
+  line-height: 1.5; 
+  margin-bottom: 15px; 
+} 
+ 
+.project-card .btn.primary { 
+  background-color: #5DADE2; 
+  color: #000; 
+} 
+ 
+.project-card .btn.primary:hover { 
+  background-color: #4A90D9; 
+} 
+/* Footer links */ 
+.footer .contact-links a { 
+  color: #5DADE2;  /* نفس اللون الأزرق المستخدم في باقي الموقع */ 
+  text-decoration: none; 
+  margin: 0 10px; 
+  transition: color 0.3s; 
+} 
+ 
+.footer .contact-links a:hover { 
+  color: #00bcd4;  /* لون تفاعلي عند المرور عليه */ 
+} 
+.cta { 
+  display: flex; 
+  gap: 10px; /* المسافة بين الزرارين */ 
+  justify-content: center; /* نركز الزرارين في النص */ 
+} 
+ 
+.cta a { 
+  flex: 0 0 200px; /* كل زر عرض ثابت 200px */ 
+  text-align: center; 
+  padding: 10px 0; 
+}
