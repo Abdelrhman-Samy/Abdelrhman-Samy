@@ -272,113 +272,116 @@ body {
   padding: 10px 0; 
 }
 
-/* Mobile adjustments - refined */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {  
 
-  /* رفع الأقسام Hero, About, Skills, Projects بشكل منفصل حسب الصفحة */
-  .home .hero-content, 
-  .home .about-section, 
-  .home .skill-section, 
-  .home .projects-grid { 
-    padding-top: 230px;  /* خاص بالـ home */ 
+  
+  .home .hero-content,  
+  .home .about-section,  
+  .home .skill-section,  
+  .home .projects-grid {  
+    padding-top: 230px;  
+  }  
+
+  .contact .hero-content,  
+  .contact .about-section,  
+  .contact .skill-section,  
+  .contact .projects-grid {  
+    padding-top: 70px;  
+  }  
+
+  
+  .skills .hero-content,  
+  .skills .about-section,  
+  .skills .skill-section,  
+  .skills .projects-grid {  
+    padding-top: 20px;  
+    padding-left: 20px;  
+    padding-right: 20px;  
+    padding-bottom: 1px;  
+  }  
+
+  
+  .nav {  
+    left: 0;  
+    display: flex;  
+    flex-wrap: wrap;  
+    flex-direction: row;  
+    justify-content: center;  
+    gap: 8px;  
+    margin-top: 5px;  
+    overflow-x: auto; /* لو زاد عن العرض يقدر يتحرك باللمس */ 
+    scrollbar-width: thin; /* تصميم scrollbar خفيف على Firefox */ 
+  }  
+
+  .nav a {  
+    font-size: 0.75rem; /* أصغر شوي */ 
+    margin-left: 0;  
+    padding: 4px 8px;  
+    white-space: nowrap; /* منع تقسيم الكلمات */ 
+  }  
+
+
+  .skills .nav {  
+    display: flex;  
+    flex-wrap: wrap; /* يخليهم على سطرين لو مفيش مساحة */ 
+    justify-content: center;  
+    gap: 8px;  
+    row-gap: 4px; /* مسافة عمودية بسيطة بين السطرين */ 
+  }  
+
+  .skills .nav a {  
+    font-size: 0.8rem;  
+    padding: 5px 9px;  
+  }  
+
+  /* Buttons: أصغر ومحاذاة جيدة */ 
+  .cta {  
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: center;  
+    align-items: center;  
+    gap: 10px;  
+  }  
+
+  .cta a {  
+    flex: 0 1 45%;  
+    max-width: 180px;  
+    padding: 6px 12px;  
+    text-align: center;  
+    font-size: 0.85rem;  
+    white-space: nowrap;  
+  }  
+
+  /* Footer ترتيب الكلام */ 
+  .footer {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 4px;  
+    align-items: center;  
+  }  
+
+  .footer .contact-links {  
+    margin-bottom: 3px;  
+  }  
+
+  .footer p {  
+    margin-top: 0;  
+    font-size: 0.7rem;  
+    text-align: center;  
+  }  
+
+  .hero {  
+    height: auto;         
+    min-height: 80vh;    
+  }  
+
+  .grid-container { 
+    gap: 15px;  
+    justify-content: center;  
   } 
 
-  .contact .hero-content, 
-  .contact .about-section, 
-  .contact .skill-section, 
-  .contact .projects-grid { 
-    padding-top: 70px;  /* خاص بالـ contact */ 
+  .grid-container .card img { 
+    max-width: 100%;  
+    height: auto;  
   } 
-
-  .skills .hero-content, 
-  .skills .about-section, 
-  .skills .skill-section, 
-  .skills .projects-grid { 
-    padding-top: 20px;   
-  } 
-
-  /* Header links: أصغر وأفقي */
-  .nav { 
-    left: 0; 
-    display: flex; 
-    flex-wrap: wrap; 
-    flex-direction: row; 
-    justify-content: center; 
-    gap: 8px; 
-    margin-top: 5px; 
-    overflow-x: auto; /* لو زاد عن العرض يقدر يتحرك باللمس */
-    scrollbar-width: thin; /* تصميم scrollbar خفيف على Firefox */
-  } 
-
-  .nav a { 
-    font-size: 0.75rem; /* أصغر شوي */
-    margin-left: 0; 
-    padding: 4px 8px; 
-    white-space: nowrap; /* منع تقسيم الكلمات */
-  } 
-
-  /* Header links أفقي بشكل خاص لصفحة Skills */
-  .skills .nav { 
-    display: flex; 
-    flex-wrap: nowrap; /* خليهم على سطر واحد قدر الإمكان */
-    justify-content: center; 
-    gap: 8px; /* مسافة مناسبة */
-  } 
-
-  .skills .nav a { 
-    padding: 4px 10px; 
-  } 
-
-  /* Buttons: أصغر ومحاذاة جيدة */
-  .cta { 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px; 
-  } 
-
-  .cta a { 
-    flex: 0 1 45%; 
-    max-width: 180px; 
-    padding: 6px 12px; 
-    text-align: center; 
-    font-size: 0.85rem; 
-    white-space: nowrap; /* يمنع النص ينكسر */
-  } 
-
-  /* Footer ترتيب الكلام */
-  .footer { 
-    display: flex; 
-    flex-direction: column; 
-    gap: 4px; 
-    align-items: center; 
-  } 
-
-  .footer .contact-links { 
-    margin-bottom: 3px; 
-  } 
-
-  .footer p { 
-    margin-top: 0; 
-    font-size: 0.7rem; 
-    text-align: center; 
-  } 
-
-  .hero { 
-    height: auto;        
-    min-height: 80vh;   
-  } 
-
-  /* تحسين الصور في Grid - خليك responsive */
-  .grid-container {
-    gap: 15px; 
-    justify-content: center; 
-  }
-
-  .grid-container .card img {
-    max-width: 100%; 
-    height: auto; 
-  }
-}
-
+} 
