@@ -271,3 +271,100 @@ body {
   text-align: center; 
   padding: 10px 0; 
 }
+
+/* Mobile adjustments - refined */
+@media (max-width: 768px) {
+
+  /* رفع الأقسام Hero, About, Skills, Projects بشكل منفصل حسب الصفحة */
+  .home .hero-content,
+  .home .about-section,
+  .home .skill-section,
+  .home .projects-grid {
+    padding-top: 230px;  /* خاص بالـ home */
+  }
+
+  .contact .hero-content,
+  .contact .about-section,
+  .contact .skill-section,
+  .contact .projects-grid {
+    padding-top: 70px;  /* خاص بالـ contact */
+  }
+
+  .skills .hero-content,
+  .skills .about-section,
+  .skills .skill-section,
+  .skills .projects-grid {
+    padding-top: 20px;  
+  }
+
+  /* Header links: أصغر وأفقي */
+  .nav {
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+  }
+
+  .nav a {
+    font-size: 0.8rem;
+    margin-left: 0;
+    padding: 5px 8px;
+  }
+
+  /* Header links أفقي بشكل خاص لصفحة Skills */
+  .skills .nav {
+    display: flex;
+    flex-wrap: wrap;        /* خليهم على سطر واحد قدر الإمكان */
+    justify-content: center;
+    gap: 10px;                /* مسافة أكبر شوي بين اللينكات */
+  }
+
+  .skills .nav a {
+    padding: 5px 10px;        /* padding مناسب للضغط باللمس */
+    white-space: nowrap;       /* يمنع تقسيم الكلمات */
+  }
+
+  /* Buttons: أصغر ومحاذاة جيدة */
+  .cta {
+  display: flex;
+  flex-wrap: wrap;        /* لو فيه أكثر من زر ينتقل لسطر ثاني */
+  justify-content: center; /* خلي كل السطر في النص */
+  align-items: center;    /* خليه عمودي في النص */
+  gap: 12px;              /* المسافة بين البزراير */
+}
+
+.cta a {
+  flex: 0 1 45%;          /* كل زر ياخد 45% من السطر → 2 بزراير على السطر */
+  max-width: 200px;       /* أقصى عرض لكل زر */
+  padding: 8px 16px;
+  text-align: center;     /* النص في الوسط */
+  font-size: 0.9rem;
+}
+
+  /* Footer ترتيب الكلام */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .footer .contact-links {
+    margin-bottom: 3px;
+  }
+
+  .footer p {
+    margin-top: 0;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .hero {
+    height: auto;       
+    min-height: 80vh;  
+  }
+}
+
