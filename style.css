@@ -273,98 +273,112 @@ body {
 }
 
 /* Mobile adjustments - refined */
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
 
   /* رفع الأقسام Hero, About, Skills, Projects بشكل منفصل حسب الصفحة */
-  .home .hero-content,
-  .home .about-section,
-  .home .skill-section,
-  .home .projects-grid {
-    padding-top: 230px;  /* خاص بالـ home */
-  }
+  .home .hero-content, 
+  .home .about-section, 
+  .home .skill-section, 
+  .home .projects-grid { 
+    padding-top: 230px;  /* خاص بالـ home */ 
+  } 
 
-  .contact .hero-content,
-  .contact .about-section,
-  .contact .skill-section,
-  .contact .projects-grid {
-    padding-top: 70px;  /* خاص بالـ contact */
-  }
+  .contact .hero-content, 
+  .contact .about-section, 
+  .contact .skill-section, 
+  .contact .projects-grid { 
+    padding-top: 70px;  /* خاص بالـ contact */ 
+  } 
 
-  .skills .hero-content,
-  .skills .about-section,
-  .skills .skill-section,
-  .skills .projects-grid {
-    padding-top: 20px;  
-  }
+  .skills .hero-content, 
+  .skills .about-section, 
+  .skills .skill-section, 
+  .skills .projects-grid { 
+    padding-top: 20px;   
+  } 
 
   /* Header links: أصغر وأفقي */
-  .nav {
-    left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 5px;
-  }
+  .nav { 
+    left: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 8px; 
+    margin-top: 5px; 
+    overflow-x: auto; /* لو زاد عن العرض يقدر يتحرك باللمس */
+    scrollbar-width: thin; /* تصميم scrollbar خفيف على Firefox */
+  } 
 
-  .nav a {
-    font-size: 0.8rem;
-    margin-left: 0;
-    padding: 5px 8px;
-  }
+  .nav a { 
+    font-size: 0.75rem; /* أصغر شوي */
+    margin-left: 0; 
+    padding: 4px 8px; 
+    white-space: nowrap; /* منع تقسيم الكلمات */
+  } 
 
   /* Header links أفقي بشكل خاص لصفحة Skills */
-  .skills .nav {
-    display: flex;
-    flex-wrap: wrap;        /* خليهم على سطر واحد قدر الإمكان */
-    justify-content: center;
-    gap: 10px;                /* مسافة أكبر شوي بين اللينكات */
-  }
+  .skills .nav { 
+    display: flex; 
+    flex-wrap: nowrap; /* خليهم على سطر واحد قدر الإمكان */
+    justify-content: center; 
+    gap: 8px; /* مسافة مناسبة */
+  } 
 
-  .skills .nav a {
-    padding: 5px 10px;        /* padding مناسب للضغط باللمس */
-    white-space: nowrap;       /* يمنع تقسيم الكلمات */
-  }
+  .skills .nav a { 
+    padding: 4px 10px; 
+  } 
 
   /* Buttons: أصغر ومحاذاة جيدة */
-  .cta {
-  display: flex;
-  flex-wrap: wrap;        /* لو فيه أكثر من زر ينتقل لسطر ثاني */
-  justify-content: center; /* خلي كل السطر في النص */
-  align-items: center;    /* خليه عمودي في النص */
-  gap: 12px;              /* المسافة بين البزراير */
-}
+  .cta { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+  } 
 
-.cta a {
-  flex: 0 1 45%;          /* كل زر ياخد 45% من السطر → 2 بزراير على السطر */
-  max-width: 200px;       /* أقصى عرض لكل زر */
-  padding: 8px 16px;
-  text-align: center;     /* النص في الوسط */
-  font-size: 0.9rem;
-}
+  .cta a { 
+    flex: 0 1 45%; 
+    max-width: 180px; 
+    padding: 6px 12px; 
+    text-align: center; 
+    font-size: 0.85rem; 
+    white-space: nowrap; /* يمنع النص ينكسر */
+  } 
 
   /* Footer ترتيب الكلام */
-  .footer {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
+  .footer { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 4px; 
+    align-items: center; 
+  } 
+
+  .footer .contact-links { 
+    margin-bottom: 3px; 
+  } 
+
+  .footer p { 
+    margin-top: 0; 
+    font-size: 0.7rem; 
+    text-align: center; 
+  } 
+
+  .hero { 
+    height: auto;        
+    min-height: 80vh;   
+  } 
+
+  /* تحسين الصور في Grid - خليك responsive */
+  .grid-container {
+    gap: 15px; 
+    justify-content: center; 
   }
 
-  .footer .contact-links {
-    margin-bottom: 3px;
-  }
-
-  .footer p {
-    margin-top: 0;
-    font-size: 0.75rem;
-    text-align: center;
-  }
-
-  .hero {
-    height: auto;       
-    min-height: 80vh;  
+  .grid-container .card img {
+    max-width: 100%; 
+    height: auto; 
   }
 }
 
